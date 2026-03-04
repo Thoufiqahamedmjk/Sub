@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://thoufiqahamed.in/sitemap.xml
+
+# Disallow system folders (optional)
+Disallow: /admin/
+Disallow: /tmp/
+Disallow: /private/
