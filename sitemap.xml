@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://thoufiqahamed.in/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url><loc>https://thoufiqahamed.in/about.html</loc></url>
+  <url><loc>https://thoufiqahamed.in/services.html</loc></url>
+  <url><loc>https://thoufiqahamed.in/pricing.html</loc></url>
+  <url><loc>https://thoufiqahamed.in/blog.html</loc></url>
+  <url><loc>https://thoufiqahamed.in/blog-single.html</loc></url>
+  <url><loc>https://thoufiqahamed.in/case-studies.html</loc></url>
+  <url><loc>https://thoufiqahamed.in/case-study-single.html</loc></url>
+  <url><loc>https://thoufiqahamed.in/contact.html</loc></url>
+  <url><loc>https://thoufiqahamed.in/privacy-policy.html</loc></url>
+  <url><loc>https://thoufiqahamed.in/terms-and-conditions.html</loc></url>
+  <url><loc>https://thoufiqahamed.in/404.html</loc></url>
+
+</urlset>
