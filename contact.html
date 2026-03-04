@@ -1,57 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Contact Us – RankIQ</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact – RankIQ</title>
 
-<meta name="description" content="Contact RankIQ for SEO services, keyword research, audits, and AI-powered optimization support." />
+<link rel="stylesheet" href="assets/css/bootstrap-5.0.0-alpha-1.min.css">
+<link rel="stylesheet" href="assets/css/animate.css">
+<link rel="stylesheet" href="assets/css/main.css">
 
-<link rel="stylesheet" href="assets/css/bootstrap-5.0.0-alpha-1.min.css" />
-<link rel="stylesheet" href="assets/css/LineIcons.2.0.css" />
-<link rel="stylesheet" href="assets/css/animate.css" />
-<link rel="stylesheet" href="assets/css/main.css" />
+<style>
+.header-links a{margin:0 12px;font-weight:600;text-decoration:none;color:#000}
+.header-links a:hover{color:#0d6efd}
+</style>
 </head>
 
 <body>
 
-<header class="py-4 text-center">
-    <h2 class="fw-bold">RankIQ</h2>
+<header class="py-4 text-center bg-white shadow-sm">
+    <h2 class="fw-bold mb-3">RankIQ</h2>
+    <div class="header-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="blog.html">Blog</a>
+        <a href="case-studies.html">Case Studies</a>
+        <a href="contact.html">Contact</a>
+    </div>
 </header>
 
 <section class="py-5">
-<div class="container">
-    <h1 class="text-center wow fadeInUp">Contact Us</h1>
+<div class="container text-center">
+<h1 class="fw-bold">Contact Us</h1>
 
-    <p class="text-center mt-3">
-        Location: Erode, Tamil Nadu, India<br>
-        Email: contact@thoufiqahamed.in<br>
-        Phone: 9884795585
-    </p>
+<p>Location: Erode, Tamil Nadu, India</p>
+<p>Email: contact@thoufiqahamed.in</p>
+<p>Phone: 9884795585</p>
 
-    <div class="row mt-4 justify-content-center">
-        <div class="col-md-6">
+<form action="https://formspree.io/f/mwvnenkk" method="POST" class="p-4 shadow-sm bg-light rounded mt-4" style="max-width:500px;margin:auto;">
+    <input name="name" placeholder="Your Name" class="form-control mb-3" required>
+    <input name="email" type="email" placeholder="Email" class="form-control mb-3" required>
+    <textarea name="message" placeholder="Message" class="form-control mb-3" rows="4" required></textarea>
 
-            <form action="https://formspree.io/f/mwvnenkk" method="POST" class="p-4 shadow-sm rounded bg-light">
-                <input type="text" name="name" class="form-control mb-3" placeholder="Your Name" required>
-                <input type="email" name="email" class="form-control mb-3" placeholder="Email Address" required>
-                <textarea name="message" class="form-control mb-3" rows="4" placeholder="Your Message" required></textarea>
-                <button class="btn btn-primary w-100">Send Message</button>
-            </form>
-
-        </div>
-    </div>
+    <button class="btn btn-primary w-100">Send Message</button>
+</form>
 
 </div>
 </section>
 
 <footer class="text-center py-4 bg-dark text-white">
-<p>© 2026 RankIQ — All Rights Reserved</p>
+© 2026 RankIQ — All Rights Reserved
 </footer>
 
 <script src="assets/js/bootstrap.bundle-5.0.0.alpha-1-min.js"></script>
 <script src="assets/js/wow.min.js"></script>
 <script>new WOW().init();</script>
-
 </body>
 </html>
