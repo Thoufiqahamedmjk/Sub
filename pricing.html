@@ -12,6 +12,27 @@
 <style>
 .header-links a{margin:0 12px;font-weight:600;text-decoration:none;color:#000}
 .header-links a:hover{color:#0d6efd}
+
+.pricing-card {
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 30px;
+    transition: .3s;
+    background: #fff;
+}
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0,0,0,.08);
+}
+.featured {
+    border: 2px solid #0d6efd;
+    background: #f0f7ff;
+    transform: scale(1.03);
+}
+.price {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
 </style>
 </head>
 
@@ -32,23 +53,77 @@
 
 <section class="py-5">
 <div class="container">
-<h1 class="text-center fw-bold">Pricing Plans</h1>
+<h1 class="text-center fw-bold mb-4">Choose Your SEO Plan</h1>
+<p class="text-center mb-5">Affordable SEO solutions designed for bloggers, agencies & businesses.</p>
 
-<div class="row mt-5">
-    <div class="col-md-4"><div class="p-4 shadow-sm text-center">Starter – ₹799/month</div></div>
-    <div class="col-md-4"><div class="p-4 shadow-sm text-center border border-primary">Growth – ₹1499/month</div></div>
-    <div class="col-md-4"><div class="p-4 shadow-sm text-center">Pro – ₹2999/month</div></div>
+<div class="row g-4">
+
+    <!-- BASIC -->
+    <div class="col-md-4">
+        <div class="pricing-card">
+            <h4 class="fw-bold">Starter</h4>
+            <div class="price">₹499</div>
+            <p class="text-muted">Perfect for beginners</p>
+            <hr>
+            <ul>
+                <li>✔ 10 Keyword Research Reports</li>
+                <li>✔ Basic SEO Audit</li>
+                <li>✔ On-Page Recommendations</li>
+                <li>✖ Backlink Strategy</li>
+                <li>✖ AI Content Optimization</li>
+            </ul>
+            <a href="contact.html" class="btn btn-dark w-100 mt-3">Get Started</a>
+        </div>
+    </div>
+
+    <!-- FEATURED -->
+    <div class="col-md-4">
+        <div class="pricing-card featured shadow-lg">
+            <h4 class="fw-bold">Growth (Popular)</h4>
+            <div class="price text-primary">₹999</div>
+            <p class="text-muted">Best for active bloggers & freelancers</p>
+            <hr>
+            <ul>
+                <li>✔ 50 Keyword Research Reports</li>
+                <li>✔ Full Technical SEO Audit</li>
+                <li>✔ AI Content Optimization</li>
+                <li>✔ Competitor Analysis</li>
+                <li>✔ Backlink Opportunities List</li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary w-100 mt-3">Start with Growth</a>
+        </div>
+    </div>
+
+    <!-- PREMIUM -->
+    <div class="col-md-4">
+        <div class="pricing-card">
+            <h4 class="fw-bold">Premium</h4>
+            <div class="price">₹1999</div>
+            <p class="text-muted">For agencies & business websites</p>
+            <hr>
+            <ul>
+                <li>✔ Unlimited Keyword Reports</li>
+                <li>✔ Complete SEO Audit & Fix Plan</li>
+                <li>✔ AI Content Optimization Suite</li>
+                <li>✔ Monthly Backlink Strategy</li>
+                <li>✔ Dedicated Support</li>
+            </ul>
+            <a href="contact.html" class="btn btn-dark w-100 mt-3">Upgrade Now</a>
+        </div>
+    </div>
+
 </div>
-
 </div>
 </section>
 
 <footer class="text-center py-4 bg-dark text-white">
-© 2026 RankIQ — All Rights Reserved
+    <p class="mb-2">© 2026 RankIQ — All Rights Reserved</p>
+    <p class="mb-0">
+        <a href="privacy-policy.html" class="text-white">Privacy Policy</a> |
+        <a href="terms-and-conditions.html" class="text-white">Terms & Conditions</a> |
+        <a href="contact.html" class="text-white">Contact</a>
+    </p>
 </footer>
 
-<script src="assets/js/bootstrap.bundle-5.0.0.alpha-1-min.js"></script>
-<script src="assets/js/wow.min.js"></script>
-<script>new WOW().init();</script>
 </body>
 </html>
