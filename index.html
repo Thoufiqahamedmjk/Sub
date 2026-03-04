@@ -120,43 +120,55 @@
     </div>
 </div>
 
-</section><!-- ========================= FAQ ========================= --><section class="py-5 bg-light">
+<!-- ========================= FAQ ========================= --><section class="py-5 bg-light" id="faq">
     <div class="container">
-        <h2 class="text-center wow fadeInUp">FAQ</h2>    <div class="accordion mt-4" id="faqAccordion">
+        <h2 class="text-center mb-4 wow fadeInUp">FAQ</h2>    <div class="accordion shadow-sm rounded-3" id="faqAccordion">
 
+        <!-- FAQ 1 -->
         <div class="accordion-item">
-            <h2 class="accordion-header">
-                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq1">
+            <h2 class="accordion-header" id="faqHeading1">
+                <button class="accordion-button" type="button" 
+                    data-bs-toggle="collapse" data-bs-target="#faq1"
+                    aria-expanded="true" aria-controls="faq1">
                     What is RankIQ?
                 </button>
             </h2>
-            <div id="faq1" class="accordion-collapse collapse show">
+            <div id="faq1" class="accordion-collapse collapse show" 
+                aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
                 <div class="accordion-body">
                     RankIQ is an AI-powered SEO toolkit with curated keyword libraries & optimization reports.
                 </div>
             </div>
         </div>
 
+        <!-- FAQ 2 -->
         <div class="accordion-item">
-            <h2 class="accordion-header">
-                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">
+            <h2 class="accordion-header" id="faqHeading2">
+                <button class="accordion-button collapsed" type="button" 
+                    data-bs-toggle="collapse" data-bs-target="#faq2"
+                    aria-expanded="false" aria-controls="faq2">
                     How does RankIQ help rank faster?
                 </button>
             </h2>
-            <div id="faq2" class="accordion-collapse collapse">
+            <div id="faq2" class="accordion-collapse collapse" 
+                aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
                 <div class="accordion-body">
                     Our hand-picked low competition keywords give the fastest path to Page 1 on Google.
                 </div>
             </div>
         </div>
 
+        <!-- FAQ 3 -->
         <div class="accordion-item">
-            <h2 class="accordion-header">
-                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq3">
+            <h2 class="accordion-header" id="faqHeading3">
+                <button class="accordion-button collapsed" type="button" 
+                    data-bs-toggle="collapse" data-bs-target="#faq3"
+                    aria-expanded="false" aria-controls="faq3">
                     Do you offer full SEO service?
                 </button>
             </h2>
-            <div id="faq3" class="accordion-collapse collapse">
+            <div id="faq3" class="accordion-collapse collapse" 
+                aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
                 <div class="accordion-body">
                     Yes — we handle audits, backlinks, on-page, technical SEO & more.
                 </div>
@@ -165,6 +177,9 @@
 
     </div>
 </div>
+
+</section>
+    
 
 </section><!-- ========================= CONTACT ========================= --><section class="py-5 text-center">
     <div class="container">
