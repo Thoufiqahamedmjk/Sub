@@ -322,77 +322,296 @@
                     </div>
 
                     <!-- 5 -->
-                    <div class="accordion-item faq-card">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q5">
-                                <i class="fa-solid fa-hourglass-half faq-icon"></i>
-                                How long does SEO take to show results?
-                            </button>
-                        </h2>
-                        <div id="q5" class="accordion-collapse collapse">
-                            <div class="accordion-body">
-                                Technical fixes show results within weeks,  
-                                but competitive ranking improvements take months.
-                            </div>
-                        </div>
-                    </div>
+<!-- ============================
+          AURORA GLASS FAQ
+=============================== -->
+<section id="faq" class="py-20 px-6 relative overflow-hidden">
 
-                    <!-- 6 -->
-                    <div class="accordion-item faq-card">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q6">
-                                <i class="fa-solid fa-globe faq-icon"></i>
-                                Is SEO only for Google?
-                            </button>
-                        </h2>
-                        <div id="q6" class="accordion-collapse collapse">
-                            <div class="accordion-body">
-                                SEO boosts visibility across Bing, DuckDuckGo, Yahoo, Ecosia & regional search engines.
-                            </div>
-                        </div>
-                    </div>
+    <!-- Aurora Background Glow -->
+    <div class="absolute top-0 left-0 w-[500px] h-[500px] bg-gradient-to-br from-indigo-300/40 to-sky-200/40 blur-3xl rounded-full opacity-40"></div>
+    <div class="absolute bottom-0 right-0 w-[450px] h-[450px] bg-gradient-to-tr from-purple-300/40 to-pink-200/40 blur-3xl rounded-full opacity-40"></div>
 
+    <div class="max-w-6xl mx-auto relative z-10">
+
+        <h2 class="text-center text-4xl md:text-5xl font-black tracking-tight mb-10 text-slate-900">
+            Frequently Asked Questions
+        </h2>
+
+        <!-- CATEGORY TABS -->
+        <div class="flex flex-wrap justify-center gap-4 mb-12">
+            <button class="faq-tab active" data-category="all">All</button>
+            <button class="faq-tab" data-category="seo">SEO Basics</button>
+            <button class="faq-tab" data-category="technical">Technical SEO</button>
+            <button class="faq-tab" data-category="content">Content</button>
+            <button class="faq-tab" data-category="services">Services</button>
+        </div>
+
+        <!-- FAQ GRID -->
+        <div class="grid md:grid-cols-2 gap-6" id="faqList">
+
+            <!-- FAQ ITEM TEMPLATE -->
+            <!-- Each item gets class faq-item and data-category -->
+
+            <!-- 1 -->
+            <div class="faq-item glass" data-category="seo">
+                <div class="faq-question">
+                    <span class="faq-icon">+</span>
+                    What is RankIQ?
+                </div>
+                <div class="faq-answer">
+                    RankIQ is an AI-driven SEO toolkit with hand-picked low-competition keywords & content optimization insights.
                 </div>
             </div>
 
-        </div>
+            <!-- 2 -->
+            <div class="faq-item glass" data-category="seo">
+                <div class="faq-question">
+                    <span class="faq-icon">+</span>
+                    How does RankIQ help me rank faster?
+                </div>
+                <div class="faq-answer">
+                    Our curated keyword libraries remove guesswork and directly target Page-1 ranking opportunities.
+                </div>
+            </div>
 
+            <!-- 3 -->
+            <div class="faq-item glass" data-category="technical">
+                <div class="faq-question">
+                    <span class="faq-icon">+</span>
+                    What is Technical SEO?
+                </div>
+                <div class="faq-answer">
+                    Technical SEO ensures your website can be crawled, indexed & interpreted properly by Google.
+                </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="faq-item glass" data-category="technical">
+                <div class="faq-question">
+                    <span class="faq-icon">+</span>
+                    Does page speed affect ranking?
+                </div>
+                <div class="faq-answer">
+                    Yes — Core Web Vitals (LCP, CLS, FID) heavily impact rankings & user trust.
+                </div>
+            </div>
+
+            <!-- 5 -->
+            <div class="faq-item glass" data-category="content">
+                <div class="faq-question">
+                    <span class="faq-icon">+</span>
+                    Are long blogs better for SEO?
+                </div>
+                <div class="faq-answer">
+                    Length doesn't matter — content quality, structure & search intent alignment matter more.
+                </div>
+            </div>
+
+            <!-- 6 -->
+            <div class="faq-item glass" data-category="content">
+                <div class="faq-question">
+                    <span class="faq-icon">+</span>
+                    Do keywords still matter?
+                </div>
+                <div class="faq-answer">
+                    Yes — but Google now uses semantic understanding & topical relevance instead of exact matches.
+                </div>
+            </div>
+
+            <!-- 7 -->
+            <div class="faq-item glass" data-category="services">
+                <div class="faq-question">
+                    <span class="faq-icon">+</span>
+                    Do you provide full SEO services?
+                </div>
+                <div class="faq-answer">
+                    Yes — complete SEO operations including audits, strategy, content, backlinks & reporting.
+                </div>
+            </div>
+
+            <!-- 8 -->
+            <div class="faq-item glass" data-category="services">
+                <div class="faq-question">
+                    <span class="faq-icon">+</span>
+                    Do you offer monthly SEO plans?
+                </div>
+                <div class="faq-answer">
+                    Yes — curated SEO plans for bloggers, businesses, and enterprise-level scaling.
+                </div>
+            </div>
+
+            <!-- 9 -->
+            <div class="faq-item glass" data-category="technical">
+                <div class="faq-question">
+                    <span class="faq-icon">+</span>
+                    What is indexing?
+                </div>
+                <div class="faq-answer">
+                    Indexing is when Google adds your page to its searchable database.
+                </div>
+            </div>
+
+            <!-- 10 -->
+            <div class="faq-item glass" data-category="technical">
+                <div class="faq-question">
+                    <span class="faq-icon">+</span>
+                    Why is my website not indexing?
+                </div>
+                <div class="faq-answer">
+                    Reasons include poor server response, blocked crawl paths, or low content quality.
+                </div>
+            </div>
+
+            <!-- 11–20 (Extra FAQs) -->
+            <div class="faq-item glass" data-category="seo">
+                <div class="faq-question"><span class="faq-icon">+</span> Does domain age matter?</div>
+                <div class="faq-answer">Not directly — authority & relevance matter more than age.</div>
+            </div>
+
+            <div class="faq-item glass" data-category="seo">
+                <div class="faq-question"><span class="faq-icon">+</span> Will AI-written content rank?</div>
+                <div class="faq-answer">Yes — if fact-checked, original, and satisfies user intent.</div>
+            </div>
+
+            <div class="faq-item glass" data-category="content">
+                <div class="faq-question"><span class="faq-icon">+</span> How often should I publish blogs?</div>
+                <div class="faq-answer">Consistency matters — aim for predictable weekly or bi-weekly posting.</div>
+            </div>
+
+            <div class="faq-item glass" data-category="content">
+                <div class="faq-question"><span class="faq-icon">+</span> Is duplicate content harmful?</div>
+                <div class="faq-answer">Google filters duplicates but doesn't penalize — original content ranks better.</div>
+            </div>
+
+            <div class="faq-item glass" data-category="services">
+                <div class="faq-question"><span class="faq-icon">+</span> Do you guarantee Page-1 rankings?</div>
+                <div class="faq-answer">No ethical SEO expert guarantees rankings — but we guarantee improvement.</div>
+            </div>
+
+            <div class="faq-item glass" data-category="services">
+                <div class="faq-question"><span class="faq-icon">+</span> Do you manage backlink building?</div>
+                <div class="faq-answer">Yes — through ethical, white-hat Digital PR outreach.</div>
+            </div>
+
+        </div>
     </div>
 </section>
 
+<style>
+/* Aurora Glass Style */
+.glass {
+    background: rgba(255, 255, 255, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(18px);
+    border-radius: 22px;
+    padding: 1.4rem 1.6rem;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+.glass:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(99, 102, 241, 0.15);
+}
+
+/* FAQ Question */
+.faq-question {
+    font-weight: 800;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #0f172a;
+}
+
+/* Icons */
+.faq-icon {
+    font-size: 1.7rem;
+    font-weight: 900;
+    color: #4f46e5;
+    transition: transform 0.3s ease;
+}
+
+/* Answer */
+.faq-answer {
+    margin-top: 10px;
+    display: none;
+    color: #475569;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Capsule Tabs */
+.faq-tab {
+    padding: 10px 24px;
+    border-radius: 40px;
+    background: rgba(255,255,255,0.5);
+    backdrop-filter: blur(14px);
+    border: 1px solid rgba(255,255,255,0.6);
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.faq-tab.active {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: white;
+    box-shadow: 0 10px 25px rgba(99,102,241,0.35);
+}
+.faq-tab:hover {
+    transform: translateY(-3px);
+}
+</style>
+
 <script>
-// LIVE FAQ SEARCH + KEYWORD HIGHLIGHT
-document.getElementById("faqSearch").addEventListener("input", function () {
-    let search = this.value.toLowerCase().trim();
-    let items = document.querySelectorAll("#faq .faq-card");
+// Toggle FAQ
+document.querySelectorAll('.faq-item').forEach(item => {
+    item.addEventListener('click', () => {
 
-    items.forEach(card => {
-        let text = card.innerText.toLowerCase();
+        const answer = item.querySelector('.faq-answer');
+        const icon = item.querySelector('.faq-icon');
 
-        // Show/hide cards
-        if (text.includes(search)) {
-            card.style.display = "block";
+        const isOpen = answer.style.display === "block";
 
-            // Highlight matched words
-            let elements = card.querySelectorAll("button, .accordion-body");
-            elements.forEach(el => {
-                let original = el.innerHTML.replace(/<mark class="highlight">|<\/mark>/g, "");
-                if (search.length > 0) {
-                    el.innerHTML = original.replace(
-                        new RegExp(search, "gi"),
-                        match => `<mark class="highlight">${match}</mark>`
-                    );
-                } else {
-                    el.innerHTML = original;
-                }
-            });
+        gsap.to(answer, {
+            height: isOpen ? 0 : "auto",
+            opacity: isOpen ? 0 : 1,
+            duration: 0.35,
+            ease: "power2.out",
+            onStart: () => {
+                if (!isOpen) answer.style.display = "block";
+            },
+            onComplete: () => {
+                if (isOpen) answer.style.display = "none";
+            }
+        });
 
-        } else {
-            card.style.display = "none";
-        }
+        gsap.to(icon, {
+            rotate: isOpen ? 0 : 45,
+            scale: isOpen ? 1 : 1.3,
+            duration: 0.3,
+            ease: "elastic.out(1, 0.4)"
+        });
     });
 });
-        </script>
+
+// Category Filter
+document.querySelectorAll('.faq-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+        document.querySelector('.faq-tab.active').classList.remove('active');
+        tab.classList.add('active');
+
+        const category = tab.dataset.category;
+
+        document.querySelectorAll('.faq-item').forEach(item => {
+            if (category === "all" || item.dataset.category === category) {
+                item.style.display = "block";
+                gsap.fromTo(item, {opacity: 0, y: 20}, {opacity: 1, y: 0, duration: 0.4});
+            } else {
+                item.style.display = "none";
+            }
+        });
+    });
+});
+</script>
 
     <!-- =====================================================
                            CONTACT
