@@ -467,30 +467,101 @@
                 <div class="faq-question"><span class="faq-icon">+</span> Does domain age matter?</div>
                 <div class="faq-answer">Not directly — authority & relevance matter more than age.</div>
             </div>
+<section id="faq" class="py-20 px-6 relative overflow-hidden">
+
+    <!-- Aurora Background Glow -->
+    <div class="absolute top-0 left-0 w-[500px] h-[500px] bg-gradient-to-br from-indigo-300/40 to-sky-200/40 blur-3xl rounded-full opacity-40"></div>
+    <div class="absolute bottom-0 right-0 w-[450px] h-[450px] bg-gradient-to-tr from-purple-300/40 to-pink-200/40 blur-3xl rounded-full opacity-40"></div>
+
+    <div class="max-w-6xl mx-auto relative z-10">
+
+        <h2 class="text-center text-4xl md:text-5xl font-black tracking-tight mb-10 text-slate-900">
+            Frequently Asked Questions
+        </h2>
+
+        <!-- CATEGORY TABS -->
+        <div class="flex flex-wrap justify-center gap-4 mb-12">
+            <button class="faq-tab active" data-category="all">All</button>
+            <button class="faq-tab" data-category="seo">SEO Basics</button>
+            <button class="faq-tab" data-category="technical">Technical SEO</button>
+            <button class="faq-tab" data-category="content">Content</button>
+            <button class="faq-tab" data-category="services">Services</button>
+        </div>
+
+        <!-- FAQ GRID -->
+        <div class="grid md:grid-cols-2 gap-6" id="faqList">
+
+            <!-- FAQ ITEMS -->
+            <div class="faq-item glass" data-category="seo">
+                <div class="faq-question">
+                    <span class="faq-icon">+</span> What is RankIQ?
+                </div>
+                <div class="faq-answer">
+                    RankIQ is an AI-driven SEO toolkit with curated low-competition keywords.
+                </div>
+            </div>
 
             <div class="faq-item glass" data-category="seo">
-                <div class="faq-question"><span class="faq-icon">+</span> Will AI-written content rank?</div>
-                <div class="faq-answer">Yes — if fact-checked, original, and satisfies user intent.</div>
+                <div class="faq-question">
+                    <span class="faq-icon">+</span> How does RankIQ help me rank faster?
+                </div>
+                <div class="faq-answer">
+                    Our keyword library directly targets quick Page-1 opportunities.
+                </div>
+            </div>
+
+            <div class="faq-item glass" data-category="technical">
+                <div class="faq-question">
+                    <span class="faq-icon">+</span> What is Technical SEO?
+                </div>
+                <div class="faq-answer">
+                    It ensures Google can crawl, index & understand your site easily.
+                </div>
+            </div>
+
+            <div class="faq-item glass" data-category="technical">
+                <div class="faq-question">
+                    <span class="faq-icon">+</span> Does page speed affect ranking?
+                </div>
+                <div class="faq-answer">
+                    Yes — Core Web Vitals are important ranking factors.
+                </div>
             </div>
 
             <div class="faq-item glass" data-category="content">
-                <div class="faq-question"><span class="faq-icon">+</span> How often should I publish blogs?</div>
-                <div class="faq-answer">Consistency matters — aim for predictable weekly or bi-weekly posting.</div>
+                <div class="faq-question">
+                    <span class="faq-icon">+</span> Are long blogs better for SEO?
+                </div>
+                <div class="faq-answer">
+                    Intent + structure matters more than word count.
+                </div>
             </div>
 
             <div class="faq-item glass" data-category="content">
-                <div class="faq-question"><span class="faq-icon">+</span> Is duplicate content harmful?</div>
-                <div class="faq-answer">Google filters duplicates but doesn't penalize — original content ranks better.</div>
+                <div class="faq-question">
+                    <span class="faq-icon">+</span> Do keywords still matter?
+                </div>
+                <div class="faq-answer">
+                    Yes — but semantic relevance is more important today.
+                </div>
             </div>
 
             <div class="faq-item glass" data-category="services">
-                <div class="faq-question"><span class="faq-icon">+</span> Do you guarantee Page-1 rankings?</div>
-                <div class="faq-answer">No ethical SEO expert guarantees rankings — but we guarantee improvement.</div>
+                <div class="faq-question">
+                    <span class="faq-icon">+</span> Do you provide full SEO services?
+                </div>
+                <div class="faq-answer">
+                    Yes — audits, backlinks, on-page, technical SEO & more.
+                </div>
             </div>
 
             <div class="faq-item glass" data-category="services">
-                <div class="faq-question"><span class="faq-icon">+</span> Do you manage backlink building?</div>
-                <div class="faq-answer">Yes — through ethical, white-hat Digital PR outreach.</div>
+                <div class="faq-question">
+                    <span class="faq-icon">+</span> Do you manage backlinks?
+                </div>
+                <div class="faq-answer">
+                    Yes — only white-hat digital PR link-building.
+                </div>
             </div>
 
         </div>
@@ -556,13 +627,11 @@
     color: white;
     box-shadow: 0 10px 25px rgba(99,102,241,0.35);
 }
-.faq-tab:hover {
-    transform: translateY(-3px);
-}
+.faq-tab:hover { transform: translateY(-3px); }
 </style>
 
 <script>
-// Toggle FAQ
+// Toggle FAQ Item
 document.querySelectorAll('.faq-item').forEach(item => {
     item.addEventListener('click', () => {
 
@@ -576,12 +645,8 @@ document.querySelectorAll('.faq-item').forEach(item => {
             opacity: isOpen ? 0 : 1,
             duration: 0.35,
             ease: "power2.out",
-            onStart: () => {
-                if (!isOpen) answer.style.display = "block";
-            },
-            onComplete: () => {
-                if (isOpen) answer.style.display = "none";
-            }
+            onStart: () => { if (!isOpen) answer.style.display = "block"; },
+            onComplete: () => { if (isOpen) answer.style.display = "none"; }
         });
 
         gsap.to(icon, {
@@ -593,9 +658,10 @@ document.querySelectorAll('.faq-item').forEach(item => {
     });
 });
 
-// Category Filter
+// Category Filters
 document.querySelectorAll('.faq-tab').forEach(tab => {
     tab.addEventListener('click', () => {
+
         document.querySelector('.faq-tab.active').classList.remove('active');
         tab.classList.add('active');
 
