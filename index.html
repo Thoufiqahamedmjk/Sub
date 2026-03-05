@@ -150,195 +150,30 @@
         </div>
     </section>
 
-    <!-- =====================================================
-          ADVANCED FAQ – SEARCH + GLOW + 2-COLUMN
-===================================================== -->
-<style>
-/* FAQ Search Bar */
-#faq .faq-search-wrapper {
-    position: relative;
-    max-width: 550px;
-    margin: 0 auto 40px;
-}
-#faq .faq-search {
-    width: 100%;
-    padding: 14px 20px 14px 50px;
-    border-radius: 14px;
-    border: 2px solid #d1d5ff;
-    background: rgba(255,255,255,0.75);
-    backdrop-filter: blur(10px);
-    font-size: 16px;
-    transition: 0.3s;
-}
-#faq .faq-search:focus {
-    border-color: #6366f1;
-    box-shadow: 0 0 15px #6366f180;
-}
-#faq .faq-search-icon {
-    position: absolute;
-    top: 50%;
-    left: 16px;
-    transform: translateY(-50%);
-    color: #6366f1;
-    font-size: 18px;
-}
+    <!-- ============================
+      AURORA GLASS FAQ – FINAL 
+================================= -->
+<section id="faq" class="py-5 position-relative overflow-hidden">
 
-/* Glow Cards */
-#faq .faq-card {
-    border-radius: 18px !important;
-    transition: 0.3s ease;
-    background: #fff;
-}
-#faq .faq-card:hover {
-    box-shadow: 
-        0 0 12px #6366f150,
-        0 0 22px #8b5cf650;
-    transform: translateY(-3px);
-}
+    <!-- Aurora Background -->
+    <div class="position-absolute" style="
+        top:-150px; left:-150px; width:380px; height:380px;
+        background:rgba(129,140,248,0.35); filter:blur(80px); border-radius:50%;">
+    </div>
 
-/* FAQ Icons */
-#faq .faq-icon {
-    margin-right: 10px;
-    color: #6366f1;
-}
-
-/* Highlight matched keyword */
-#faq mark.highlight {
-    background: #fef08a;
-    padding: 2px 4px;
-    border-radius: 4px;
-}
-
-/* Section Title Gradient */
-#faq .text-gradient {
-    background: linear-gradient(90deg, #4f46e5, #7c3aed);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-/* Blobs */
-.faq-blob {
-    position: absolute;
-    width: 380px;
-    height: 380px;
-    border-radius: 50%;
-    filter: blur(80px);
-    opacity: 0.35;
-    z-index: 0;
-}
-.blob1 { background: #818cf8; top: -140px; left: -120px; }
-.blob2 { background: #c084fc; bottom: -140px; right: -120px; }
-</style>
-
-<section class="py-5 position-relative" id="faq">
-
-    <div class="faq-blob blob1"></div>
-    <div class="faq-blob blob2"></div>
+    <div class="position-absolute" style="
+        bottom:-150px; right:-150px; width:380px; height:380px;
+        background:rgba(192,132,252,0.35); filter:blur(80px); border-radius:50%;">
+    </div>
 
     <div class="container position-relative">
 
-        <h2 class="text-center mb-4 fw-bold display-6 text-gradient wow fadeInUp">
-            SEO FAQs – Search & Learn
-        </h2>
-
-        <!-- Search Bar -->
-        <div class="faq-search-wrapper wow fadeInUp">
-            <input type="text" id="faqSearch" class="faq-search" placeholder="Search your question… (e.g., backlinks, indexing)">
-            <i class="fa-solid fa-magnifying-glass faq-search-icon"></i>
-        </div>
-
-        <div class="row g-4 mt-4" id="faqList">
-
-            <!-- LEFT -->
-            <div class="col-md-6">
-                <div class="accordion" id="faqLeft">
-
-                    <!-- 1 -->
-                    <div class="accordion-item faq-card">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#q1">
-                                <i class="fa-solid fa-lightbulb faq-icon"></i>
-                                What is RankIQ?
-                            </button>
-                        </h2>
-                        <div id="q1" class="accordion-collapse collapse show">
-                            <div class="accordion-body">
-                                RankIQ is an AI-powered SEO toolkit offering curated keyword libraries & optimization workflows.
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 2 -->
-                    <div class="accordion-item faq-card">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q2">
-                                <i class="fa-solid fa-rocket faq-icon"></i>
-                                How does RankIQ help rank faster?
-                            </button>
-                        </h2>
-                        <div id="q2" class="accordion-collapse collapse">
-                            <div class="accordion-body">
-                                RankIQ’s low-competition keyword library ensures the fastest path to Page 1 growth.
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 3 -->
-                    <div class="accordion-item faq-card">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q3">
-                                <i class="fa-solid fa-briefcase faq-icon"></i>
-                                Do you offer full SEO services?
-                            </button>
-                        </h2>
-                        <div id="q3" class="accordion-collapse collapse">
-                            <div class="accordion-body">
-                                Yes — including audits, backlinks, technical SEO, on-page optimization & reporting.
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- RIGHT -->
-            <div class="col-md-6">
-                <div class="accordion" id="faqRight">
-
-                    <!-- 4 -->
-                    <div class="accordion-item faq-card">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q4">
-                                <i class="fa-solid fa-link faq-icon"></i>
-                                Can backlinks alone improve rankings?
-                            </button>
-                        </h2>
-                        <div id="q4" class="accordion-collapse collapse">
-                            <div class="accordion-body">
-                                Backlinks help, but without semantic-rich content,
-                                technical fixes & UX optimization, rankings won’t sustain.
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 5 -->
-<!-- ============================
-          AURORA GLASS FAQ
-=============================== -->
-<section id="faq" class="py-20 px-6 relative overflow-hidden">
-
-    <!-- Aurora Background Glow -->
-    <div class="absolute top-0 left-0 w-[500px] h-[500px] bg-gradient-to-br from-indigo-300/40 to-sky-200/40 blur-3xl rounded-full opacity-40"></div>
-    <div class="absolute bottom-0 right-0 w-[450px] h-[450px] bg-gradient-to-tr from-purple-300/40 to-pink-200/40 blur-3xl rounded-full opacity-40"></div>
-
-    <div class="max-w-6xl mx-auto relative z-10">
-
-        <h2 class="text-center text-4xl md:text-5xl font-black tracking-tight mb-10 text-slate-900">
+        <h2 class="text-center fw-bold mb-5" style="font-size:2.4rem;">
             Frequently Asked Questions
         </h2>
 
         <!-- CATEGORY TABS -->
-        <div class="flex flex-wrap justify-center gap-4 mb-12">
+        <div class="d-flex justify-content-center flex-wrap gap-2 mb-4">
             <button class="faq-tab active" data-category="all">All</button>
             <button class="faq-tab" data-category="seo">SEO Basics</button>
             <button class="faq-tab" data-category="technical">Technical SEO</button>
@@ -347,220 +182,78 @@
         </div>
 
         <!-- FAQ GRID -->
-        <div class="grid md:grid-cols-2 gap-6" id="faqList">
+        <div class="row g-4" id="faqList">
 
-            <!-- FAQ ITEM TEMPLATE -->
-            <!-- Each item gets class faq-item and data-category -->
-
-            <!-- 1 -->
-            <div class="faq-item glass" data-category="seo">
-                <div class="faq-question">
-                    <span class="faq-icon">+</span>
-                    What is RankIQ?
-                </div>
-                <div class="faq-answer">
-                    RankIQ is an AI-driven SEO toolkit with hand-picked low-competition keywords & content optimization insights.
-                </div>
-            </div>
-
-            <!-- 2 -->
-            <div class="faq-item glass" data-category="seo">
-                <div class="faq-question">
-                    <span class="faq-icon">+</span>
-                    How does RankIQ help me rank faster?
-                </div>
-                <div class="faq-answer">
-                    Our curated keyword libraries remove guesswork and directly target Page-1 ranking opportunities.
-                </div>
-            </div>
-
-            <!-- 3 -->
-            <div class="faq-item glass" data-category="technical">
-                <div class="faq-question">
-                    <span class="faq-icon">+</span>
-                    What is Technical SEO?
-                </div>
-                <div class="faq-answer">
-                    Technical SEO ensures your website can be crawled, indexed & interpreted properly by Google.
-                </div>
-            </div>
-
-            <!-- 4 -->
-            <div class="faq-item glass" data-category="technical">
-                <div class="faq-question">
-                    <span class="faq-icon">+</span>
-                    Does page speed affect ranking?
-                </div>
-                <div class="faq-answer">
-                    Yes — Core Web Vitals (LCP, CLS, FID) heavily impact rankings & user trust.
-                </div>
-            </div>
-
-            <!-- 5 -->
-            <div class="faq-item glass" data-category="content">
-                <div class="faq-question">
-                    <span class="faq-icon">+</span>
-                    Are long blogs better for SEO?
-                </div>
-                <div class="faq-answer">
-                    Length doesn't matter — content quality, structure & search intent alignment matter more.
-                </div>
-            </div>
-
-            <!-- 6 -->
-            <div class="faq-item glass" data-category="content">
-                <div class="faq-question">
-                    <span class="faq-icon">+</span>
-                    Do keywords still matter?
-                </div>
-                <div class="faq-answer">
-                    Yes — but Google now uses semantic understanding & topical relevance instead of exact matches.
-                </div>
-            </div>
-
-            <!-- 7 -->
-            <div class="faq-item glass" data-category="services">
-                <div class="faq-question">
-                    <span class="faq-icon">+</span>
-                    Do you provide full SEO services?
-                </div>
-                <div class="faq-answer">
-                    Yes — complete SEO operations including audits, strategy, content, backlinks & reporting.
-                </div>
-            </div>
-
-            <!-- 8 -->
-            <div class="faq-item glass" data-category="services">
-                <div class="faq-question">
-                    <span class="faq-icon">+</span>
-                    Do you offer monthly SEO plans?
-                </div>
-                <div class="faq-answer">
-                    Yes — curated SEO plans for bloggers, businesses, and enterprise-level scaling.
-                </div>
-            </div>
-
-            <!-- 9 -->
-            <div class="faq-item glass" data-category="technical">
-                <div class="faq-question">
-                    <span class="faq-icon">+</span>
-                    What is indexing?
-                </div>
-                <div class="faq-answer">
-                    Indexing is when Google adds your page to its searchable database.
-                </div>
-            </div>
-
-            <!-- 10 -->
-            <div class="faq-item glass" data-category="technical">
-                <div class="faq-question">
-                    <span class="faq-icon">+</span>
-                    Why is my website not indexing?
-                </div>
-                <div class="faq-answer">
-                    Reasons include poor server response, blocked crawl paths, or low content quality.
-                </div>
-            </div>
-
-            <!-- 11–20 (Extra FAQs) -->
-            <div class="faq-item glass" data-category="seo">
-                <div class="faq-question"><span class="faq-icon">+</span> Does domain age matter?</div>
-                <div class="faq-answer">Not directly — authority & relevance matter more than age.</div>
-            </div>
-<section id="faq" class="py-20 px-6 relative overflow-hidden">
-
-    <!-- Aurora Background Glow -->
-    <div class="absolute top-0 left-0 w-[500px] h-[500px] bg-gradient-to-br from-indigo-300/40 to-sky-200/40 blur-3xl rounded-full opacity-40"></div>
-    <div class="absolute bottom-0 right-0 w-[450px] h-[450px] bg-gradient-to-tr from-purple-300/40 to-pink-200/40 blur-3xl rounded-full opacity-40"></div>
-
-    <div class="max-w-6xl mx-auto relative z-10">
-
-        <h2 class="text-center text-4xl md:text-5xl font-black tracking-tight mb-10 text-slate-900">
-            Frequently Asked Questions
-        </h2>
-
-        <!-- CATEGORY TABS -->
-        <div class="flex flex-wrap justify-center gap-4 mb-12">
-            <button class="faq-tab active" data-category="all">All</button>
-            <button class="faq-tab" data-category="seo">SEO Basics</button>
-            <button class="faq-tab" data-category="technical">Technical SEO</button>
-            <button class="faq-tab" data-category="content">Content</button>
-            <button class="faq-tab" data-category="services">Services</button>
-        </div>
-
-        <!-- FAQ GRID -->
-        <div class="grid md:grid-cols-2 gap-6" id="faqList">
-
-            <!-- FAQ ITEMS -->
-            <div class="faq-item glass" data-category="seo">
+            <!-- Example FAQ Item -->
+            <div class="col-md-6 faq-item glass" data-category="seo">
                 <div class="faq-question">
                     <span class="faq-icon">+</span> What is RankIQ?
                 </div>
                 <div class="faq-answer">
-                    RankIQ is an AI-driven SEO toolkit with curated low-competition keywords.
+                    RankIQ is an AI-powered SEO toolkit with hand-picked low-competition keywords & optimization insights.
                 </div>
             </div>
 
-            <div class="faq-item glass" data-category="seo">
+            <div class="col-md-6 faq-item glass" data-category="seo">
                 <div class="faq-question">
                     <span class="faq-icon">+</span> How does RankIQ help me rank faster?
                 </div>
                 <div class="faq-answer">
-                    Our keyword library directly targets quick Page-1 opportunities.
+                    RankIQ removes guesswork using curated keyword libraries built for Page-1 ranking opportunities.
                 </div>
             </div>
 
-            <div class="faq-item glass" data-category="technical">
+            <div class="col-md-6 faq-item glass" data-category="technical">
                 <div class="faq-question">
                     <span class="faq-icon">+</span> What is Technical SEO?
                 </div>
                 <div class="faq-answer">
-                    It ensures Google can crawl, index & understand your site easily.
+                    Technical SEO ensures your website can be crawled, indexed, and understood by Google properly.
                 </div>
             </div>
 
-            <div class="faq-item glass" data-category="technical">
+            <div class="col-md-6 faq-item glass" data-category="technical">
                 <div class="faq-question">
                     <span class="faq-icon">+</span> Does page speed affect ranking?
                 </div>
                 <div class="faq-answer">
-                    Yes — Core Web Vitals are important ranking factors.
+                    Yes. Core Web Vitals like LCP, FID, and CLS directly impact ranking & user trust.
                 </div>
             </div>
 
-            <div class="faq-item glass" data-category="content">
+            <div class="col-md-6 faq-item glass" data-category="content">
                 <div class="faq-question">
                     <span class="faq-icon">+</span> Are long blogs better for SEO?
                 </div>
                 <div class="faq-answer">
-                    Intent + structure matters more than word count.
+                    Quality, structure & intent matter more than word count.
                 </div>
             </div>
 
-            <div class="faq-item glass" data-category="content">
+            <div class="col-md-6 faq-item glass" data-category="content">
                 <div class="faq-question">
                     <span class="faq-icon">+</span> Do keywords still matter?
                 </div>
                 <div class="faq-answer">
-                    Yes — but semantic relevance is more important today.
+                    Yes — but Google now uses semantic understanding and topical relevance.
                 </div>
             </div>
 
-            <div class="faq-item glass" data-category="services">
+            <div class="col-md-6 faq-item glass" data-category="services">
                 <div class="faq-question">
                     <span class="faq-icon">+</span> Do you provide full SEO services?
                 </div>
                 <div class="faq-answer">
-                    Yes — audits, backlinks, on-page, technical SEO & more.
+                    Yes — complete SEO operations including audits, content, backlinks & technical fixes.
                 </div>
             </div>
 
-            <div class="faq-item glass" data-category="services">
+            <div class="col-md-6 faq-item glass" data-category="services">
                 <div class="faq-question">
-                    <span class="faq-icon">+</span> Do you manage backlinks?
+                    <span class="faq-icon">+</span> Do you offer monthly SEO plans?
                 </div>
                 <div class="faq-answer">
-                    Yes — only white-hat digital PR link-building.
+                    Yes — custom SEO plans for bloggers, startups, and business brands.
                 </div>
             </div>
 
@@ -572,8 +265,8 @@
 /* Aurora Glass Style */
 .glass {
     background: rgba(255, 255, 255, 0.35);
-    border: 1px solid rgba(255, 255, 255, 0.45);
-    backdrop-filter: blur(18px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(14px);
     border-radius: 22px;
     padding: 1.4rem 1.6rem;
     cursor: pointer;
@@ -581,69 +274,59 @@
 }
 .glass:hover {
     transform: translateY(-4px);
-    box-shadow: 0 20px 40px rgba(99, 102, 241, 0.15);
+    box-shadow: 0 20px 45px rgba(99,102,241,0.18);
 }
-
-/* FAQ Question */
 .faq-question {
     font-weight: 800;
-    font-size: 1rem;
+    font-size: 1.05rem;
     display: flex;
     align-items: center;
-    gap: 12px;
     color: #0f172a;
+    gap: 14px;
 }
-
-/* Icons */
 .faq-icon {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     font-weight: 900;
     color: #4f46e5;
-    transition: transform 0.3s ease;
+    transition: transform .3s ease;
 }
-
-/* Answer */
 .faq-answer {
-    margin-top: 10px;
     display: none;
+    margin-top: 12px;
     color: #475569;
     line-height: 1.6;
-    font-size: 0.95rem;
 }
-
-/* Capsule Tabs */
+/* Tabs */
 .faq-tab {
-    padding: 10px 24px;
-    border-radius: 40px;
-    background: rgba(255,255,255,0.5);
-    backdrop-filter: blur(14px);
-    border: 1px solid rgba(255,255,255,0.6);
+    padding: 8px 22px;
+    border-radius: 30px;
+    background: rgba(255,255,255,0.45);
+    border: 1px solid rgba(255,255,255,0.55);
     font-weight: 700;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.25s;
 }
 .faq-tab.active {
     background: linear-gradient(135deg, #6366f1, #8b5cf6);
     color: white;
-    box-shadow: 0 10px 25px rgba(99,102,241,0.35);
+    box-shadow: 0 8px 22px rgba(99,102,241,0.35);
 }
-.faq-tab:hover { transform: translateY(-3px); }
+.faq-tab:hover {
+    transform: translateY(-3px);
+}
 </style>
 
 <script>
-// Toggle FAQ Item
 document.querySelectorAll('.faq-item').forEach(item => {
     item.addEventListener('click', () => {
-
         const answer = item.querySelector('.faq-answer');
         const icon = item.querySelector('.faq-icon');
-
         const isOpen = answer.style.display === "block";
 
         gsap.to(answer, {
             height: isOpen ? 0 : "auto",
             opacity: isOpen ? 0 : 1,
-            duration: 0.35,
+            duration: .35,
             ease: "power2.out",
             onStart: () => { if (!isOpen) answer.style.display = "block"; },
             onComplete: () => { if (isOpen) answer.style.display = "none"; }
@@ -651,26 +334,24 @@ document.querySelectorAll('.faq-item').forEach(item => {
 
         gsap.to(icon, {
             rotate: isOpen ? 0 : 45,
-            scale: isOpen ? 1 : 1.3,
-            duration: 0.3,
-            ease: "elastic.out(1, 0.4)"
+            scale: isOpen ? 1 : 1.25,
+            duration: .3,
         });
     });
 });
 
-// Category Filters
+// Tabs
 document.querySelectorAll('.faq-tab').forEach(tab => {
     tab.addEventListener('click', () => {
-
-        document.querySelector('.faq-tab.active').classList.remove('active');
+        document.querySelector('.faq-tab.active')?.classList.remove('active');
         tab.classList.add('active');
 
-        const category = tab.dataset.category;
+        const c = tab.dataset.category;
 
         document.querySelectorAll('.faq-item').forEach(item => {
-            if (category === "all" || item.dataset.category === category) {
+            if (c === "all" || item.dataset.category === c) {
                 item.style.display = "block";
-                gsap.fromTo(item, {opacity: 0, y: 20}, {opacity: 1, y: 0, duration: 0.4});
+                gsap.fromTo(item, {opacity:0, y:20}, {opacity:1, y:0, duration:.35});
             } else {
                 item.style.display = "none";
             }
@@ -678,8 +359,7 @@ document.querySelectorAll('.faq-tab').forEach(tab => {
     });
 });
 </script>
-
-    <!-- =====================================================
+       <!-- =====================================================
                            CONTACT
     ===================================================== -->
     <section class="py-5 text-center">
